@@ -1,0 +1,787 @@
+{
+  "nav": {
+    "styles": {
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "fontFamily": "\"Microsoft YaHei\", \"Open Sans\", \"PingFang SC\", \"Helvetica Neue\", \"Hiragino Sans GB\", \"WenQuanYi Micro Hei\", Arial, \"sans-serif\"",
+      "lineHeight": "16.1px",
+      "color": "rgb(102, 102, 102)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "padding": "0px 48px",
+      "margin": "0px",
+      "borderRadius": "0px",
+      "display": "block",
+      "flexDirection": "row",
+      "justifyContent": "normal",
+      "alignItems": "normal",
+      "gap": "normal",
+      "maxWidth": "none",
+      "width": "1440px",
+      "height": "90px",
+      "position": "fixed",
+      "letterSpacing": "normal"
+    },
+    "logo": {
+      "src": "https://www.weigaoholding.com/uploads/20240111/10df580c37c95ce6e6bd039b0ff2fec4.svg"
+    },
+    "links": [
+      {
+        "text": "首页",
+        "href": "https://www.weigaoholding.com/"
+      },
+      {
+        "text": "关于威高",
+        "href": "https://www.weigaoholding.com/about.html?cate=2"
+      },
+      {
+        "text": "威高简介",
+        "href": "https://www.weigaoholding.com/about.html?cate=2"
+      },
+      {
+        "text": "企业文化",
+        "href": "https://www.weigaoholding.com/Culture/index.html?cate=3"
+      },
+      {
+        "text": "发展历程",
+        "href": "https://www.weigaoholding.com/History/index.html?cate=29"
+      },
+      {
+        "text": "荣誉资质",
+        "href": "https://www.weigaoholding.com/Honnor/index.html?cate=30"
+      },
+      {
+        "text": "产品中心",
+        "href": "https://www.weigaoholding.com/Product/index.html?cate=8"
+      },
+      {
+        "text": "通用耗材",
+        "href": "https://www.weigaoholding.com/Product/index.html?cate=9"
+      },
+      {
+        "text": "内分泌",
+        "href": "https://www.weigaoholding.com/Product/index.html?cate=51"
+      },
+      {
+        "text": "医疗信息化",
+        "href": "https://www.weigaoholding.com/Product/index.html?cate=53"
+      }
+    ]
+  },
+  "hero": {
+    "styles": {
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "fontFamily": "\"Microsoft YaHei\", \"Open Sans\", \"PingFang SC\", \"Helvetica Neue\", \"Hiragino Sans GB\", \"WenQuanYi Micro Hei\", Arial, \"sans-serif\"",
+      "lineHeight": "16.1px",
+      "color": "rgb(102, 102, 102)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "padding": "0px",
+      "margin": "0px",
+      "borderRadius": "0px",
+      "display": "block",
+      "flexDirection": "row",
+      "justifyContent": "normal",
+      "alignItems": "normal",
+      "gap": "normal",
+      "maxWidth": "none",
+      "width": "1440px",
+      "height": "900px",
+      "position": "relative",
+      "letterSpacing": "normal"
+    },
+    "slides": [
+      {
+        "title": "我们是威高\n\n                                        打造全球化\n医疗器械和医药创新型企业",
+        "subtitle": "",
+        "media": {
+          "type": "video",
+          "src": "https://wangyiniu.libukaini.cn/gywg.mp4"
+        }
+      },
+      {
+        "title": "全领域产品\n\n                                    产品及解决方案",
+        "subtitle": "心脏科",
+        "media": {
+          "type": "image",
+          "src": "https://www.weigaoholding.com/uploads/20240117/39ee67099e9873d7c59bc0c767b8b293.svg"
+        }
+      },
+      {
+        "subtitle": "心脏科",
+        "media": null
+      },
+      {
+        "subtitle": "鼻喉科",
+        "media": null
+      },
+      {
+        "subtitle": "手术科",
+        "media": null
+      },
+      {
+        "subtitle": "胸外科",
+        "media": null
+      },
+      {
+        "subtitle": "腹腔外科",
+        "media": null
+      },
+      {
+        "subtitle": "全科室",
+        "media": null
+      },
+      {
+        "subtitle": "手术室",
+        "media": null
+      },
+      {
+        "subtitle": "外科",
+        "media": null
+      },
+      {
+        "subtitle": "整形美容科",
+        "media": null
+      },
+      {
+        "subtitle": "神经内科",
+        "media": null
+      },
+      {
+        "subtitle": "康复理疗科",
+        "media": null
+      },
+      {
+        "subtitle": "麻醉科",
+        "media": null
+      },
+      {
+        "subtitle": "急诊科",
+        "media": null
+      },
+      {
+        "subtitle": "乳腺外科",
+        "media": null
+      },
+      {
+        "subtitle": "肿瘤科",
+        "media": null
+      },
+      {
+        "subtitle": "泌尿科",
+        "media": null
+      },
+      {
+        "subtitle": "普外科",
+        "media": null
+      },
+      {
+        "subtitle": "老年病科",
+        "media": null
+      },
+      {
+        "subtitle": "产科",
+        "media": null
+      },
+      {
+        "subtitle": "呼吸内科",
+        "media": null
+      },
+      {
+        "subtitle": "消化内科",
+        "media": null
+      },
+      {
+        "subtitle": "神经外科",
+        "media": null
+      },
+      {
+        "subtitle": "康复科",
+        "media": null
+      },
+      {
+        "subtitle": "重症监护室",
+        "media": null
+      },
+      {
+        "subtitle": "肛肠科",
+        "media": null
+      },
+      {
+        "subtitle": "新生儿科",
+        "media": null
+      },
+      {
+        "subtitle": "口腔科",
+        "media": null
+      },
+      {
+        "subtitle": "内科",
+        "media": null
+      },
+      {
+        "subtitle": "肾内科",
+        "media": null
+      },
+      {
+        "subtitle": "血液净化中心",
+        "media": null
+      },
+      {
+        "subtitle": "B超室",
+        "media": null
+      },
+      {
+        "subtitle": "肿瘤内科",
+        "media": null
+      },
+      {
+        "subtitle": "疼痛科",
+        "media": null
+      },
+      {
+        "subtitle": "呼吸科",
+        "media": null
+      },
+      {
+        "subtitle": "病房",
+        "media": null
+      },
+      {
+        "subtitle": "导管室",
+        "media": null
+      },
+      {
+        "subtitle": "ICU",
+        "media": null
+      },
+      {
+        "subtitle": "影像科",
+        "media": null
+      },
+      {
+        "subtitle": "信息科",
+        "media": null
+      },
+      {
+        "subtitle": "普通住院病区",
+        "media": null
+      },
+      {
+        "subtitle": "护理部",
+        "media": null
+      },
+      {
+        "subtitle": "VIP病房",
+        "media": null
+      },
+      {
+        "subtitle": "智慧病房样板间",
+        "media": null
+      },
+      {
+        "subtitle": "长期输液科室",
+        "media": null
+      },
+      {
+        "subtitle": "脊柱外科",
+        "media": null
+      },
+      {
+        "subtitle": "骨科",
+        "media": null
+      },
+      {
+        "subtitle": "口腔颌面外科",
+        "media": null
+      },
+      {
+        "subtitle": "口腔种植科",
+        "media": null
+      },
+      {
+        "subtitle": "烧伤科",
+        "media": null
+      },
+      {
+        "subtitle": "血管外科",
+        "media": null
+      },
+      {
+        "subtitle": "显微外科",
+        "media": null
+      },
+      {
+        "subtitle": "眼科",
+        "media": null
+      },
+      {
+        "subtitle": "辅助生殖科",
+        "media": null
+      },
+      {
+        "subtitle": "血透室",
+        "media": null
+      },
+      {
+        "subtitle": "心胸外科",
+        "media": null
+      },
+      {
+        "subtitle": "体外循环科",
+        "media": null
+      },
+      {
+        "subtitle": "肝胆外科",
+        "media": null
+      },
+      {
+        "subtitle": "痔瘘科",
+        "media": null
+      },
+      {
+        "subtitle": "中医肛肠科",
+        "media": null
+      },
+      {
+        "subtitle": "泌尿外科",
+        "media": null
+      },
+      {
+        "subtitle": "整形外科",
+        "media": null
+      },
+      {
+        "subtitle": "创伤外科",
+        "media": null
+      },
+      {
+        "subtitle": "门诊科",
+        "media": null
+      },
+      {
+        "subtitle": "甲乳科",
+        "media": null
+      },
+      {
+        "subtitle": "门诊换药室",
+        "media": null
+      },
+      {
+        "subtitle": "中医科",
+        "media": null
+      },
+      {
+        "subtitle": "针灸科",
+        "media": null
+      },
+      {
+        "subtitle": "皮肤科",
+        "media": null
+      },
+      {
+        "subtitle": "实验室",
+        "media": null
+      },
+      {
+        "subtitle": "供应室",
+        "media": null
+      },
+      {
+        "subtitle": "LDRP产房",
+        "media": null
+      },
+      {
+        "subtitle": "分娩室",
+        "media": null
+      },
+      {
+        "subtitle": "放射科",
+        "media": null
+      },
+      {
+        "subtitle": "体检科",
+        "media": null
+      },
+      {
+        "subtitle": "CCU",
+        "media": null
+      },
+      {
+        "subtitle": "救护车",
+        "media": null
+      },
+      {
+        "subtitle": "生殖中心",
+        "media": null
+      },
+      {
+        "subtitle": "检验科",
+        "media": null
+      },
+      {
+        "subtitle": "心内科",
+        "media": null
+      },
+      {
+        "subtitle": "介入科",
+        "media": null
+      },
+      {
+        "subtitle": "各级血站",
+        "media": null
+      },
+      {
+        "subtitle": "脐血单位",
+        "media": null
+      },
+      {
+        "subtitle": "通用耗材",
+        "media": null
+      },
+      {
+        "subtitle": "骨科",
+        "media": null
+      },
+      {
+        "subtitle": "内分泌",
+        "media": null
+      },
+      {
+        "subtitle": "医疗信息化",
+        "media": null
+      },
+      {
+        "subtitle": "口腔",
+        "media": null
+      },
+      {
+        "subtitle": "组织修复",
+        "media": null
+      },
+      {
+        "subtitle": "血液净化",
+        "media": null
+      },
+      {
+        "subtitle": "药包材",
+        "media": null
+      },
+      {
+        "subtitle": "外科",
+        "media": null
+      },
+      {
+        "subtitle": "手术机器人",
+        "media": null
+      },
+      {
+        "subtitle": "全血采集",
+        "media": null
+      },
+      {
+        "subtitle": "介入",
+        "media": null
+      },
+      {
+        "subtitle": "体外诊断",
+        "media": null
+      },
+      {
+        "subtitle": "辅助生殖",
+        "media": null
+      },
+      {
+        "subtitle": "医用医疗设备",
+        "media": null
+      },
+      {
+        "subtitle": "康复系列",
+        "media": null
+      },
+      {
+        "subtitle": "药品",
+        "media": null
+      },
+      {
+        "subtitle": "内窥镜",
+        "media": null
+      },
+      {
+        "subtitle": "消毒感控",
+        "media": null
+      },
+      {
+        "title": "威高新闻\n\n                            \n\n                            \n\n                                了解更多",
+        "media": {
+          "type": "image",
+          "src": "https://www.weigaoholding.com/template/default/index//4195/images/new_g_r.svg"
+        }
+      },
+      {
+        "subtitle": "作为全球性的医疗器械企业，我们在坚持高质量发展的同时，倡导低碳生产，致力于环境友好的医疗器械制造。",
+        "media": {
+          "type": "image",
+          "src": "https://www.weigaoholding.com/template/default/index//4195/images/f_big_logo.svg"
+        }
+      }
+    ]
+  },
+  "about": {
+    "styles": {
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "fontFamily": "\"Microsoft YaHei\", \"Open Sans\", \"PingFang SC\", \"Helvetica Neue\", \"Hiragino Sans GB\", \"WenQuanYi Micro Hei\", Arial, \"sans-serif\"",
+      "lineHeight": "16.1px",
+      "color": "rgb(102, 102, 102)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "padding": "0px",
+      "margin": "0px",
+      "borderRadius": "0px",
+      "display": "block",
+      "flexDirection": "row",
+      "justifyContent": "normal",
+      "alignItems": "normal",
+      "gap": "normal",
+      "maxWidth": "none",
+      "width": "1440px",
+      "height": "900px",
+      "position": "relative",
+      "letterSpacing": "normal"
+    },
+    "stats": []
+  },
+  "products": {
+    "styles": {
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "fontFamily": "\"Microsoft YaHei\", \"Open Sans\", \"PingFang SC\", \"Helvetica Neue\", \"Hiragino Sans GB\", \"WenQuanYi Micro Hei\", Arial, \"sans-serif\"",
+      "lineHeight": "16.1px",
+      "color": "rgb(102, 102, 102)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "padding": "90px 0px 0px",
+      "margin": "0px",
+      "borderRadius": "0px",
+      "display": "block",
+      "flexDirection": "row",
+      "justifyContent": "normal",
+      "alignItems": "normal",
+      "gap": "normal",
+      "maxWidth": "none",
+      "width": "1440px",
+      "height": "900px",
+      "position": "relative",
+      "letterSpacing": "normal"
+    },
+    "title": "全领域产品\n\n                                    产品及解决方案",
+    "categories": []
+  },
+  "footer": {
+    "styles": {
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "fontFamily": "\"Microsoft YaHei\", \"Open Sans\", \"PingFang SC\", \"Helvetica Neue\", \"Hiragino Sans GB\", \"WenQuanYi Micro Hei\", Arial, \"sans-serif\"",
+      "lineHeight": "16.1px",
+      "color": "rgb(102, 102, 102)",
+      "backgroundColor": "rgb(0, 85, 155)",
+      "padding": "0px",
+      "margin": "0px",
+      "borderRadius": "0px",
+      "display": "block",
+      "flexDirection": "row",
+      "justifyContent": "normal",
+      "alignItems": "normal",
+      "gap": "normal",
+      "maxWidth": "none",
+      "width": "1440px",
+      "height": "554px",
+      "position": "relative",
+      "letterSpacing": "normal"
+    },
+    "columns": [
+      {
+        "links": [
+          {
+            "text": "通用耗材",
+            "href": "https://www.weigaoholding.com/Product/index.html?cate=9"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "text": "内分泌",
+            "href": "https://www.weigaoholding.com/Product/index.html?cate=51"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "text": "医疗信息化",
+            "href": "https://www.weigaoholding.com/Product/index.html?cate=53"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "text": "骨科",
+            "href": "https://www.weigaoholding.com/Product/index.html?cate=42"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "text": "口腔",
+            "href": "https://www.weigaoholding.com/Product/index.html?cate=56"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "text": "组织修复",
+            "href": "https://www.weigaoholding.com/Product/index.html?cate=59"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "text": "血液净化",
+            "href": "https://www.weigaoholding.com/Product/index.html?cate=61"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "text": "药包材",
+            "href": "https://www.weigaoholding.com/Product/index.html?cate=69"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "text": "外科",
+            "href": "https://www.weigaoholding.com/Product/index.html?cate=73"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "text": "手术机器人",
+            "href": "https://www.weigaoholding.com/Product/index.html?cate=80"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "text": "全血采集",
+            "href": "https://www.weigaoholding.com/Product/index.html?cate=82"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "text": "介入",
+            "href": "https://www.weigaoholding.com/Product/index.html?cate=86"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "text": "体外诊断",
+            "href": "https://www.weigaoholding.com/Product/index.html?cate=90"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "text": "辅助生殖",
+            "href": "https://www.weigaoholding.com/Product/index.html?cate=96"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "text": "医用医疗设备",
+            "href": "https://www.weigaoholding.com/Product/index.html?cate=98"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "text": "康复系列",
+            "href": "https://www.weigaoholding.com/Product/index.html?cate=105"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "text": "内窥镜",
+            "href": "https://www.weigaoholding.com/Product/index.html?cate=127"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "text": "药品",
+            "href": "https://www.weigaoholding.com/Product/index.html?cate=113"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "text": "威高简介",
+            "href": "https://www.weigaoholding.com/about.html?cate=2"
+          },
+          {
+            "text": "企业文化",
+            "href": "https://www.weigaoholding.com/Culture/index.html?cate=3"
+          },
+          {
+            "text": "发展历程",
+            "href": "https://www.weigaoholding.com/History/index.html?cate=29"
+          },
+          {
+            "text": "荣誉资质",
+            "href": "https://www.weigaoholding.com/Honnor/index.html?cate=30"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "text": "公司新闻",
+            "href": "https://www.weigaoholding.com/Article/index.html?cate=5"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "text": "联系我们",
+            "href": "https://www.weigaoholding.com/Page/index.html?cate=35"
+          },
+          {
+            "text": "供应商门户",
+            "href": "https://wgsrm.weigaogroup.com:8091/ierp/kingdee/pur/srmportal/srmportal.html?userId=guest&accountId=1297079530267082752#/index"
+          }
+        ]
+      }
+    ]
+  }
+}
