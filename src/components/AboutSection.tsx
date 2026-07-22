@@ -34,7 +34,7 @@ const featureLinks = [
   },
 ];
 
-function useCountUp(target: number, isVisible: boolean, duration: number = 2000) {
+function useCountUp(target: number, isVisible: boolean, duration: number = 1500) {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
