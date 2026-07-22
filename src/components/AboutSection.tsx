@@ -11,7 +11,7 @@ interface Stat {
 
 const stats: Stat[] = [
   { label: "Founded", value: 2019, unit: "" },
-  { label: "Products", value: 500, unit: "+" },
+  { label: "Products", value: 3000, unit: "+" },
   { label: "Countries", value: 50, unit: "+" },
   { label: "Partners", value: 100, unit: "+" },
 ];
