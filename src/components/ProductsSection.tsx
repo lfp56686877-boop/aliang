@@ -175,7 +175,7 @@ export function ProductsSection() {
         {/* View More */}
         <div className="text-center mt-12">
           <a
-            href="#products"
+            href="/products"
             className="inline-block px-8 py-4 bg-dandelion-blue text-white font-medium rounded hover:bg-dandelion-dark-blue transition-colors duration-300"
           >
             View All Products
