@@ -12,13 +12,13 @@ const productFields: ProductField[] = [
     id: "general",
     name: "General Supplies",
     description: "Disposable medical supplies and consumables",
-    icon: "🩹",
+    icon: "💉",
   },
   {
     id: "endocrinology",
     name: "Endocrinology",
     description: "Diabetes care and hormone therapy devices",
-    icon: "💉",
+    icon: "🔬",
   },
   {
     id: "medical-it",
@@ -48,7 +48,7 @@ const productFields: ProductField[] = [
     id: "blood-purification",
     name: "Blood Purification",
     description: "Dialysis and blood purification systems",
-    icon: "🩸",
+    icon: "💧",
   },
   {
     id: "packaging",
@@ -60,7 +60,7 @@ const productFields: ProductField[] = [
     id: "surgery",
     name: "Surgery",
     description: "Surgical instruments and equipment",
-    icon: "🔬",
+    icon: "🔪",
   },
   {
     id: "robotics",
@@ -78,7 +78,43 @@ const productFields: ProductField[] = [
     id: "interventional",
     name: "Interventional",
     description: "Minimally invasive interventional devices",
-    icon: " catheter",
+    icon: "➕",
+  },
+  {
+    id: "ivd",
+    name: "In Vitro Diagnostics",
+    description: "In vitro diagnostic reagents and equipment",
+    icon: "🧪",
+  },
+  {
+    id: "assisted-reproduction",
+    name: "Assisted Reproduction",
+    description: "ART devices and consumables",
+    icon: "👶",
+  },
+  {
+    id: "medical-equipment",
+    name: "Medical Equipment",
+    description: "Medical devices and equipment",
+    icon: "🏥",
+  },
+  {
+    id: "rehabilitation",
+    name: "Rehabilitation",
+    description: "Rehabilitation therapy equipment",
+    icon: "🦿",
+  },
+  {
+    id: "endoscopy",
+    name: "Endoscopy",
+    description: "Endoscopic systems and instruments",
+    icon: "📷",
+  },
+  {
+    id: "pharmaceuticals",
+    name: "Pharmaceuticals",
+    description: "Pharmaceutical products and drugs",
+    icon: "💊",
   },
 ];
 

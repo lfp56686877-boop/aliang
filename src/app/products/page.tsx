@@ -54,6 +54,12 @@ const productFields = [
   "Surgical Robots",
   "Blood Collection",
   "Interventional",
+  "In Vitro Diagnostics",
+  "Assisted Reproduction",
+  "Medical Equipment",
+  "Rehabilitation",
+  "Endoscopy",
+  "Pharmaceuticals",
 ];
 
 const products: Product[] = [
