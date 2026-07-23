@@ -59,7 +59,6 @@ const productFields = [
   "Medical Equipment",
   "Rehabilitation",
   "Endoscopy",
-  "Pharmaceuticals",
 ];
 
 const products: Product[] = [

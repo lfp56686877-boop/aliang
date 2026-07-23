@@ -110,12 +110,6 @@ const productFields: ProductField[] = [
     description: "Endoscopic systems and instruments",
     icon: "📷",
   },
-  {
-    id: "pharmaceuticals",
-    name: "Pharmaceuticals",
-    description: "Pharmaceutical products and drugs",
-    icon: "💊",
-  },
 ];
 
 export function ProductsSection() {
