@@ -1,0 +1,85 @@
+{
+  "general": {
+    "name": "General Supplies",
+    "subcategories": []
+  },
+  "endocrinology": {
+    "name": "Endocrinology",
+    "subcategories": []
+  },
+  "medical-it": {
+    "name": "Medical IT",
+    "subcategories": []
+  },
+  "orthopedics": {
+    "name": "Orthopedics",
+    "subcategories": []
+  },
+  "dental": {
+    "name": "Dental",
+    "subcategories": []
+  },
+  "tissue-repair": {
+    "name": "Tissue Repair",
+    "subcategories": []
+  },
+  "blood-purification": {
+    "name": "Blood Purification",
+    "subcategories": []
+  },
+  "packaging": {
+    "name": "Packaging Materials",
+    "subcategories": []
+  },
+  "surgery": {
+    "name": "Surgery",
+    "subcategories": []
+  },
+  "robotics": {
+    "name": "Surgical Robots",
+    "subcategories": []
+  },
+  "blood-collection": {
+    "name": "Blood Collection",
+    "subcategories": []
+  },
+  "interventional": {
+    "name": "Interventional",
+    "subcategories": []
+  },
+  "ivd": {
+    "name": "In Vitro Diagnostics",
+    "subcategories": [
+      {
+        "name": "全部领域",
+        "cateId": "8"
+      }
+    ]
+  },
+  "assisted-reproduction": {
+    "name": "Assisted Reproduction",
+    "subcategories": []
+  },
+  "medical-equipment": {
+    "name": "Medical Equipment",
+    "subcategories": [
+      {
+        "name": "全部领域",
+        "cateId": "8"
+      }
+    ]
+  },
+  "rehabilitation": {
+    "name": "Rehabilitation",
+    "subcategories": [
+      {
+        "name": "全部领域",
+        "cateId": "8"
+      }
+    ]
+  },
+  "endoscopy": {
+    "name": "Endoscopy",
+    "subcategories": []
+  }
+}

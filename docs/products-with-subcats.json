@@ -1,0 +1,143 @@
+{
+  "general": {
+    "name": "General Supplies",
+    "subcategories": [
+      "临床其他耗材",
+      "输注耗材",
+      "留置针",
+      "麻醉呼吸耗材",
+      "感染防护耗材",
+      "手术室耗材（包）",
+      "临床护理耗材",
+      "重症耗材"
+    ]
+  },
+  "endocrinology": {
+    "name": "Endocrinology",
+    "subcategories": [
+      "内分泌耗材"
+    ]
+  },
+  "medical-it": {
+    "name": "Medical IT",
+    "subcategories": [
+      "智慧就医解决方案",
+      "智慧肾科解决方案",
+      "智慧护理解决方案",
+      "智慧物资解决方案"
+    ]
+  },
+  "orthopedics": {
+    "name": "Orthopedics",
+    "subcategories": [
+      "关节",
+      "创伤",
+      "脊柱",
+      "骨修复材料",
+      "运动医学",
+      "脊柱内窥镜",
+      "骨科器械"
+    ]
+  },
+  "dental": {
+    "name": "Dental",
+    "subcategories": [
+      "口腔诊疗器械",
+      "牙种植体耗材"
+    ]
+  },
+  "tissue-repair": {
+    "name": "Tissue Repair",
+    "subcategories": [
+      "负压引流耗材",
+      "富血小板血浆治疗耗材"
+    ]
+  },
+  "blood-purification": {
+    "name": "Blood Purification",
+    "subcategories": [
+      "血液透析设备",
+      "腹膜透析制剂",
+      "腹膜透析其他耗材",
+      "血液透析设备管路洗消产品",
+      "血液透析耗材",
+      "血液透析其他耗材",
+      "血液透析制剂耗材"
+    ]
+  },
+  "packaging": {
+    "name": "Packaging Materials",
+    "subcategories": [
+      "医药包装耗材",
+      "自动给药系统",
+      "预灌封给药系统"
+    ]
+  },
+  "surgery": {
+    "name": "Surgery",
+    "subcategories": [
+      "外科其他耗材",
+      "缝合耗材",
+      "外科手术器械",
+      "外科造口耗材",
+      "外科敷料耗材"
+    ]
+  },
+  "robotics": {
+    "name": "Surgical Robots",
+    "subcategories": [
+      "腹腔镜手术机器人器械",
+      "腹腔镜手术机器人"
+    ]
+  },
+  "blood-collection": {
+    "name": "Blood Collection",
+    "subcategories": [
+      "输血设备",
+      "全血采集药品",
+      "全血采集耗材"
+    ]
+  },
+  "interventional": {
+    "name": "Interventional",
+    "subcategories": [
+      "其他非血管介入系列",
+      "外周介入系列",
+      "护理介入",
+      "神经介入系列",
+      "血管介入系列",
+      "肿瘤介入系列",
+      "冠脉介入系列"
+    ]
+  },
+  "ivd": {
+    "name": "In Vitro Diagnostics",
+    "subcategories": []
+  },
+  "assisted-reproduction": {
+    "name": "Assisted Reproduction",
+    "subcategories": [
+      "质谱试剂",
+      "免疫试剂",
+      "检验仪器",
+      "检验诊断耗材",
+      "生化试剂",
+      "检验采血耗材",
+      "其他试剂"
+    ]
+  },
+  "medical-equipment": {
+    "name": "Medical Equipment",
+    "subcategories": []
+  },
+  "rehabilitation": {
+    "name": "Rehabilitation",
+    "subcategories": []
+  },
+  "endoscopy": {
+    "name": "Endoscopy",
+    "subcategories": [
+      "辅助生殖耗材"
+    ]
+  }
+}
