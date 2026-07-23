@@ -49,7 +49,7 @@ const productFields = [
   "Dental",
   "Tissue Repair",
   "Blood Purification",
-  "Packaging",
+  "Packaging Materials",
   "Surgery",
   "Surgical Robots",
   "Blood Collection",

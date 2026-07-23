@@ -1,179 +1,126 @@
 "use client";
 
-import { useState, useMemo } from "react";
-
-interface Product {
+interface ProductField {
   id: string;
   name: string;
   description: string;
-  image: string;
-  category: string;
+  icon: string;
 }
 
-const categories = [
-  "Cardiology",
-  "ENT",
-  "Surgery",
-  "Thoracic Surgery",
-  "General Surgery",
-  "All Departments",
-];
-
-const products: Product[] = [
-  // Cardiology
+const productFields: ProductField[] = [
   {
-    id: "heart-1",
-    name: "Drug-Eluting Stents",
-    description: "High-performance drug-eluting coronary stents",
-    image: "/images/product-1.jpg",
-    category: "Cardiology",
+    id: "general",
+    name: "General Supplies",
+    description: "Disposable medical supplies and consumables",
+    icon: "🩹",
   },
   {
-    id: "heart-2",
-    name: "Cardiac Pacemakers",
-    description: "Permanent cardiac pacemaker systems",
-    image: "/images/product-2.jpg",
-    category: "Cardiology",
+    id: "endocrinology",
+    name: "Endocrinology",
+    description: "Diabetes care and hormone therapy devices",
+    icon: "💉",
   },
   {
-    id: "heart-3",
-    name: "Heart Valves",
-    description: "Artificial heart valve prostheses",
-    image: "/images/product-3.jpg",
-    category: "Cardiology",
+    id: "medical-it",
+    name: "Medical IT",
+    description: "Healthcare information technology solutions",
+    icon: "💻",
   },
   {
-    id: "heart-4",
-    name: "Cardiac Monitors",
-    description: "Multi-parameter cardiac monitoring systems",
-    image: "/images/product-4.jpg",
-    category: "Cardiology",
-  },
-  // ENT
-  {
-    id: "ent-1",
-    name: "Nasal Endoscopes",
-    description: "HD nasal endoscopy systems",
-    image: "/images/product-5.jpg",
-    category: "ENT",
+    id: "orthopedics",
+    name: "Orthopedics",
+    description: "Bone implants and surgical instruments",
+    icon: "🦴",
   },
   {
-    id: "ent-2",
-    name: "Laryngoscopes",
-    description: "Video laryngoscopy equipment",
-    image: "/images/product-6.jpg",
-    category: "ENT",
+    id: "dental",
+    name: "Dental",
+    description: "Dental equipment and instruments",
+    icon: "🦷",
   },
   {
-    id: "ent-3",
-    name: "Audiometers",
-    description: "Pure tone audiometry devices",
-    image: "/images/product-7.jpg",
-    category: "ENT",
+    id: "tissue-repair",
+    name: "Tissue Repair",
+    description: "Wound healing and tissue regeneration",
+    icon: "🩹",
   },
   {
-    id: "ent-4",
-    name: "Sleep Monitors",
-    description: "Polysomnography systems",
-    image: "/images/product-8.jpg",
-    category: "ENT",
-  },
-  // Surgery
-  {
-    id: "surgery-1",
-    name: "Surgical Scalpels",
-    description: "Disposable surgical scalpels",
-    image: "/images/product-9.jpg",
-    category: "Surgery",
+    id: "blood-purification",
+    name: "Blood Purification",
+    description: "Dialysis and blood purification systems",
+    icon: "🩸",
   },
   {
-    id: "surgery-2",
-    name: "Surgical Scissors",
-    description: "Precision surgical scissors",
-    image: "/images/product-1.jpg",
-    category: "Surgery",
+    id: "packaging",
+    name: "Packaging Materials",
+    description: "Medical packaging and sterilization",
+    icon: "📦",
   },
   {
-    id: "surgery-3",
-    name: "Surgical Forceps",
-    description: "Minimally invasive surgical forceps",
-    image: "/images/product-2.jpg",
-    category: "Surgery",
+    id: "surgery",
+    name: "Surgery",
+    description: "Surgical instruments and equipment",
+    icon: "🔬",
   },
   {
-    id: "surgery-4",
-    name: "Surgical Sutures",
-    description: "Absorbable surgical sutures",
-    image: "/images/product-3.jpg",
-    category: "Surgery",
+    id: "robotics",
+    name: "Surgical Robots",
+    description: "Robotic-assisted surgical systems",
+    icon: "🤖",
+  },
+  {
+    id: "blood-collection",
+    name: "Blood Collection",
+    description: "Blood collection and diagnostic devices",
+    icon: "🩸",
+  },
+  {
+    id: "interventional",
+    name: "Interventional",
+    description: "Minimally invasive interventional devices",
+    icon: " catheter",
   },
 ];
 
 export function ProductsSection() {
-  const [activeCategory, setActiveCategory] = useState("Cardiology");
-
-  const filteredProducts = useMemo(() => {
-    return products.filter((p) => p.category === activeCategory);
-  }, [activeCategory]);
-
   return (
     <section id="products" className="py-20 bg-white">
       <div className="max-w-[1200px] mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-dandelion-dark-gray mb-4">
-            Our Products
+            Our Product Fields
           </h2>
           <h3 className="text-xl md:text-2xl font-semibold text-dandelion-blue">
-            Solutions & Services
+            Comprehensive Medical Device Solutions
           </h3>
+          <p className="text-dandelion-gray mt-4 max-w-3xl mx-auto">
+            Covering the entire lifecycle of healthcare with safe, reliable,
+            and trustworthy medical system solutions
+          </p>
         </div>
 
-        {/* Category Tabs */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
-          {categories.map((category) => (
-            <button
-              key={category}
-              onClick={() => setActiveCategory(category)}
-              className={`px-6 py-2 rounded-full text-sm font-medium border-2 transition-all duration-300 ${
-                activeCategory === category
-                  ? "bg-dandelion-blue border-dandelion-blue text-white"
-                  : "border-gray-200 text-dandelion-gray hover:border-dandelion-blue hover:text-dandelion-blue"
-              }`}
+        {/* Product Fields Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-12">
+          {productFields.map((field) => (
+            <a
+              key={field.id}
+              href={`/products?field=${field.id}`}
+              className="group bg-dandelion-light-blue rounded-lg p-6 text-center hover:bg-dandelion-blue transition-all duration-300 cursor-pointer"
             >
-              {category}
-            </button>
-          ))}
-        </div>
-
-        {/* Products Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {filteredProducts.map((product) => (
-            <div
-              key={product.id}
-              className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer group"
-            >
-              <div className="aspect-[4/3] overflow-hidden">
-                <img
-                  src={product.image}
-                  alt={product.name}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <div className="p-5">
-                <h4 className="text-base font-semibold text-dandelion-dark-gray mb-2 group-hover:text-dandelion-blue transition-colors">
-                  {product.name}
-                </h4>
-                <p className="text-sm text-dandelion-gray">
-                  {product.description}
-                </p>
-              </div>
-            </div>
+              <div className="text-4xl mb-3">{field.icon}</div>
+              <h4 className="text-base font-semibold text-dandelion-dark-gray mb-2 group-hover:text-white transition-colors">
+                {field.name}
+              </h4>
+              <p className="text-sm text-dandelion-gray group-hover:text-white/80 transition-colors">
+                {field.description}
+              </p>
+            </a>
           ))}
         </div>
 
         {/* View More */}
-        <div className="text-center mt-12">
+        <div className="text-center">
           <a
             href="/products"
             className="inline-block px-8 py-4 bg-dandelion-blue text-white font-medium rounded hover:bg-dandelion-dark-blue transition-colors duration-300"
