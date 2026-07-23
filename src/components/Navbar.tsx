@@ -1,127 +1,148 @@
-"use client";
+'use client';
 
-import { useState, useEffect } from "react";
-import { SearchIcon, MenuIcon, CloseIcon } from "./icons";
-
-const navLinks = [
-  { label: "About", href: "#about" },
-  { label: "Products", href: "#products" },
-  { label: "News", href: "#news" },
-];
+import { useState, useEffect } from 'react';
+import Link from 'next/link';
+import { MenuIcon, CloseIcon, WhatsAppIcon } from './icons';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { language, setLanguage, t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
 
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const navItems = [
+    { label: t('About', '关于我们'), href: '/about' },
+    { label: t('Services', '服务'), href: '/services' },
+    { label: t('Products', '产品'), href: '/products' },
+    { label: t('Contact', '联系'), href: '/contact' },
+  ];
+
   return (
-    <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white shadow-md" : "bg-transparent"
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled
+          ? 'bg-white/95 backdrop-blur-sm shadow-sm'
+          : 'bg-transparent'
       }`}
     >
-      <div className="max-w-[1200px] mx-auto px-6 md:px-12 flex items-center justify-between h-[90px]">
-        {/* Logo */}
-        <a href="/" className="flex items-center">
-          <span
-            className={`text-xl font-bold transition-colors duration-300 ${
-              isScrolled ? "text-dandelion-dark-gray" : "text-white"
-            }`}
-          >
-            DANDELION MEDICAL
-          </span>
-        </a>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16 md:h-20">
+          {/* Logo */}
+          <Link href="/" className="flex items-center space-x-2">
+            <div className="w-10 h-10 bg-dandelion-blue rounded-lg flex items-center justify-center">
+              <span className="text-white font-bold text-xl">D</span>
+            </div>
+            <div className="flex flex-col">
+              <span className={`font-heading font-bold text-lg leading-tight ${
+                isScrolled ? 'text-dandelion-dark-gray' : 'text-white'
+              }`}>
+                DANDELION
+              </span>
+              <span className={`font-heading text-xs tracking-wider ${
+                isScrolled ? 'text-dandelion-gray' : 'text-white/80'
+              }`}>
+                MEDICAL
+              </span>
+            </div>
+          </Link>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden lg:flex items-center gap-10">
-          {navLinks.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              className={`text-sm font-medium transition-colors duration-300 hover:text-dandelion-blue relative group ${
-                isScrolled ? "text-dandelion-dark-gray" : "text-white"
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center space-x-8">
+            {navItems.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={`font-medium transition-colors hover:text-dandelion-blue ${
+                  isScrolled ? 'text-dandelion-dark-gray' : 'text-white'
+                }`}
+              >
+                {item.label}
+              </Link>
+            ))}
+          </div>
+
+          {/* Right Section */}
+          <div className="flex items-center space-x-4">
+            {/* Language Switcher */}
+            <button
+              onClick={() => setLanguage(language === 'en' ? 'zh' : 'en')}
+              className={`px-3 py-1 rounded-full text-sm font-medium transition-colors ${
+                isScrolled
+                  ? 'bg-dandelion-light-blue text-dandelion-blue hover:bg-dandelion-blue hover:text-white'
+                  : 'bg-white/20 text-white hover:bg-white/30'
               }`}
             >
-              {link.label}
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-dandelion-blue transition-all duration-300 group-hover:w-full" />
+              {language === 'en' ? '中文' : 'EN'}
+            </button>
+
+            {/* WhatsApp CTA */}
+            <a
+              href="https://wa.me/8618669317333?text=Hello, I'd like to inquire about medical device sourcing."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden sm:flex items-center space-x-2 bg-[#25D366] text-white px-4 py-2 rounded-full hover:bg-[#128C7E] transition-colors"
+            >
+              <WhatsAppIcon className="w-5 h-5" />
+              <span className="font-medium text-sm">
+                {t('WhatsApp', 'WhatsApp')}
+              </span>
             </a>
-          ))}
-        </nav>
 
-        {/* Right Actions */}
-        <div className="flex items-center gap-4">
-          <button
-            className={`p-2 transition-colors duration-300 hover:text-dandelion-blue ${
-              isScrolled ? "text-dandelion-dark-gray" : "text-white"
-            }`}
-            aria-label="Search"
-          >
-            <SearchIcon size={20} />
-          </button>
-
-          {/* Mobile Menu Button */}
-          <button
-            className={`lg:hidden p-2 transition-colors duration-300 ${
-              isScrolled ? "text-dandelion-dark-gray" : "text-white"
-            }`}
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            aria-label="Menu"
-          >
-            {isMobileMenuOpen ? (
-              <CloseIcon size={24} />
-            ) : (
-              <MenuIcon size={24} />
-            )}
-          </button>
+            {/* Mobile Menu Button */}
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className={`md:hidden p-2 rounded-lg ${
+                isScrolled
+                  ? 'text-dandelion-dark-gray hover:bg-dandelion-light-blue'
+                  : 'text-white hover:bg-white/20'
+              }`}
+              aria-label="Toggle menu"
+            >
+              {isMobileMenuOpen ? (
+                <CloseIcon className="w-6 h-6" />
+              ) : (
+                <MenuIcon className="w-6 h-6" />
+              )}
+            </button>
+          </div>
         </div>
-      </div>
 
-      {/* Mobile Menu */}
-      <div
-        className={`lg:hidden fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform transition-transform duration-300 z-50 ${
-          isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
-        }`}
-      >
-        <div className="p-6">
-          <button
-            className="absolute top-4 right-4 text-dandelion-dark-gray"
-            onClick={() => setIsMobileMenuOpen(false)}
-            aria-label="Close menu"
-          >
-            <CloseIcon size={24} />
-          </button>
-
-          <ul className="mt-12 flex flex-col gap-6">
-            {navLinks.map((link) => (
-              <li key={link.label}>
-                <a
-                  href={link.href}
-                  className="text-lg font-medium text-dandelion-dark-gray hover:text-dandelion-blue transition-colors"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  {link.label}
-                </a>
-              </li>
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden bg-white border-t border-gray-100 py-4">
+            {navItems.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="block px-4 py-3 text-dandelion-dark-gray hover:bg-dandelion-light-blue transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {item.label}
+              </Link>
             ))}
-          </ul>
-        </div>
+            <a
+              href="https://wa.me/8618669317333?text=Hello, I'd like to inquire about medical device sourcing."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center space-x-2 mx-4 mt-4 bg-[#25D366] text-white px-4 py-3 rounded-full hover:bg-[#128C7E] transition-colors"
+            >
+              <WhatsAppIcon className="w-5 h-5" />
+              <span className="font-medium">
+                {t('Chat on WhatsApp', 'WhatsApp咨询')}
+              </span>
+            </a>
+          </div>
+        )}
       </div>
-
-      {/* Mobile Menu Overlay */}
-      {isMobileMenuOpen && (
-        <div
-          className="lg:hidden fixed inset-0 bg-black/50 z-40"
-          onClick={() => setIsMobileMenuOpen(false)}
-        />
-      )}
-    </header>
+    </nav>
   );
 }
