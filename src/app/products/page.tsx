@@ -1,17 +1,17 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, ReactNode } from 'react';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { WhatsAppButton } from '@/components/WhatsAppButton';
-import { SearchIcon, ArrowRightIcon } from '@/components/icons';
+import { SearchIcon, ArrowRightIcon, ConsumablesIcon, ScalpelIcon, OrthopedicIcon, DiagnosticIcon, MonitoringIcon, IVDIcon, DentalIcon, OphthalmicIcon, RehabilitationIcon, RespiratoryIcon, LaboratoryIcon, InterventionalIcon, BloodIcon, EndoscopyIcon, ImagingIcon, ReproductionIcon, MedicalITIcon, SterilizationIcon } from '@/components/icons';
 
 interface ProductCategory {
   id: string;
   name: string;
   nameCn: string;
   description: string;
-  icon: string;
+  icon: ReactNode;
   subcategories: string[];
 }
 
@@ -21,7 +21,7 @@ const productCategories: ProductCategory[] = [
     name: 'General Medical Supplies',
     nameCn: '医疗耗材',
     description: 'Consumables, disposables, PPE',
-    icon: '💊',
+    icon: <ConsumablesIcon className="w-10 h-10 text-[#2563EB]" />,
     subcategories: [
       'Syringes & Needles',
       'Infusion Sets',
@@ -48,7 +48,7 @@ const productCategories: ProductCategory[] = [
     name: 'Surgical Instruments',
     nameCn: '手术器械',
     description: 'Operating room equipment',
-    icon: '🔪',
+    icon: <ScalpelIcon className="w-10 h-10 text-[#2563EB]" />,
     subcategories: [
       // === 官方分类：吻（缝）合器及附件 (C11) ===
       // 腔镜吻合器
@@ -101,7 +101,7 @@ const productCategories: ProductCategory[] = [
     name: 'Orthopedic Devices',
     nameCn: '骨科器械',
     description: 'Implants, trauma, joint replacement',
-    icon: '🦴',
+    icon: <OrthopedicIcon className="w-10 h-10 text-[#2563EB]" />,
     subcategories: [
       // === 官方分类：骨及软骨组织材料 (C03) ===
       'Bone Fixation Implants (Plates, Screws)',
@@ -143,7 +143,7 @@ const productCategories: ProductCategory[] = [
     name: 'Diagnostic Equipment',
     nameCn: '诊断设备',
     description: 'X-ray, ultrasound, ECG',
-    icon: '🔬',
+    icon: <DiagnosticIcon className="w-10 h-10 text-[#2563EB]" />,
     subcategories: [
       'X-Ray Machines (DR, CR)',
       'Ultrasound Systems',
@@ -170,7 +170,7 @@ const productCategories: ProductCategory[] = [
     name: 'Patient Monitoring',
     nameCn: '监护设备',
     description: 'ICU, vital signs monitors',
-    icon: '📊',
+    icon: <MonitoringIcon className="w-10 h-10 text-[#2563EB]" />,
     subcategories: [
       // === 官方分类：心血管植入物 (C02) - 起搏器/除颤器 ===
       'Temporary Pacemaker Electrode',
@@ -211,7 +211,7 @@ const productCategories: ProductCategory[] = [
     name: 'In Vitro Diagnostics (IVD)',
     nameCn: '体外诊断',
     description: 'Reagents, analyzers',
-    icon: '🧪',
+    icon: <IVDIcon className="w-10 h-10 text-[#2563EB]" />,
     subcategories: [
       'Clinical Chemistry Analyzers',
       'Hematology Analyzers',
@@ -238,7 +238,7 @@ const productCategories: ProductCategory[] = [
     name: 'Dental Equipment',
     nameCn: '口腔设备',
     description: 'Chairs, instruments, materials',
-    icon: '🦷',
+    icon: <DentalIcon className="w-10 h-10 text-[#2563EB]" />,
     subcategories: [
       // === 官方分类：口腔材料 ===
       'Oral Implant System',
@@ -270,7 +270,7 @@ const productCategories: ProductCategory[] = [
     name: 'Ophthalmic Devices',
     nameCn: '眼科器械',
     description: 'Eye care equipment',
-    icon: '👁️',
+    icon: <OphthalmicIcon className="w-10 h-10 text-[#2563EB]" />,
     subcategories: [
       // === 官方分类：眼科材料 ===
       'Intraocular Lenses (IOL)',
@@ -303,7 +303,7 @@ const productCategories: ProductCategory[] = [
     name: 'Rehabilitation Equipment',
     nameCn: '康复设备',
     description: 'Physical therapy, mobility',
-    icon: '🦿',
+    icon: <RehabilitationIcon className="w-10 h-10 text-[#2563EB]" />,
     subcategories: [
       'Manual Wheelchairs',
       'Electric Wheelchairs',
@@ -330,7 +330,7 @@ const productCategories: ProductCategory[] = [
     name: 'Respiratory Devices',
     nameCn: '呼吸设备',
     description: 'Ventilators, CPAP, oxygen',
-    icon: '🫁',
+    icon: <RespiratoryIcon className="w-10 h-10 text-[#2563EB]" />,
     subcategories: [
       'Invasive Mechanical Ventilators',
       'Non-Invasive Ventilators (NIPPV)',
@@ -357,7 +357,7 @@ const productCategories: ProductCategory[] = [
     name: 'Laboratory Equipment',
     nameCn: '实验室设备',
     description: 'Lab instruments, centrifuges',
-    icon: '⚗️',
+    icon: <LaboratoryIcon className="w-10 h-10 text-[#2563EB]" />,
     subcategories: [
       'Centrifuges',
       'Microscopes (Optical/Fluorescence)',
@@ -384,7 +384,7 @@ const productCategories: ProductCategory[] = [
     name: 'Interventional Devices',
     nameCn: '介入器械',
     description: 'Catheters, stents, guidewires',
-    icon: '➕',
+    icon: <InterventionalIcon className="w-10 h-10 text-[#2563EB]" />,
     subcategories: [
       // === 官方分类：血管介入治疗类材料 (C02) ===
       // 冠状动脉介入
@@ -440,7 +440,7 @@ const productCategories: ProductCategory[] = [
     name: 'Blood Management',
     nameCn: '血液管理',
     description: 'Blood bags, transfusion',
-    icon: '🩸',
+    icon: <BloodIcon className="w-10 h-10 text-[#2563EB]" />,
     subcategories: [
       // === 官方分类：人工器官、组织及配套材料 (C06) - 血液循环系统 ===
       'Artificial Blood Vessels',
@@ -470,7 +470,7 @@ const productCategories: ProductCategory[] = [
     name: 'Endoscopy Systems',
     nameCn: '内窥镜系统',
     description: 'Endoscopes, accessories',
-    icon: '📷',
+    icon: <EndoscopyIcon className="w-10 h-10 text-[#2563EB]" />,
     subcategories: [
       // === 官方分类：非血管介入治疗类材料 (C01) ===
       // 呼吸介入
@@ -523,7 +523,7 @@ const productCategories: ProductCategory[] = [
     name: 'Medical Imaging',
     nameCn: '医学影像',
     description: 'CT, MRI, X-ray systems',
-    icon: '📡',
+    icon: <ImagingIcon className="w-10 h-10 text-[#2563EB]" />,
     subcategories: [
       // === 官方分类：人工器官、组织及配套材料 (C06) - 感觉器官 ===
       'Cochlear Implants',
@@ -558,7 +558,7 @@ const productCategories: ProductCategory[] = [
     name: 'Assisted Reproduction',
     nameCn: '辅助生殖',
     description: 'IVF equipment',
-    icon: '👶',
+    icon: <ReproductionIcon className="w-10 h-10 text-[#2563EB]" />,
     subcategories: [
       'IVF Workstations',
       'CO2 Incubators (IVF)',
@@ -585,7 +585,7 @@ const productCategories: ProductCategory[] = [
     name: 'Medical IT Systems',
     nameCn: '医疗信息化',
     description: 'HIS, PACS, EMR',
-    icon: '💻',
+    icon: <MedicalITIcon className="w-10 h-10 text-[#2563EB]" />,
     subcategories: [
       'Hospital Information Systems (HIS)',
       'PACS (Picture Archiving & Communication)',
@@ -612,7 +612,7 @@ const productCategories: ProductCategory[] = [
     name: 'Packaging & Sterilization',
     nameCn: '包装灭菌',
     description: 'Sterilization equipment',
-    icon: '📦',
+    icon: <SterilizationIcon className="w-10 h-10 text-[#2563EB]" />,
     subcategories: [
       'Autoclaves (Steam Sterilization)',
       'Ethylene Oxide (EtO) Sterilization',
@@ -696,7 +696,7 @@ export default function ProductsPage() {
                 onClick={() => setSelectedCategory(selectedCategory?.id === category.id ? null : category)}
               >
                 <div className="flex items-start gap-4">
-                  <div className="text-4xl">{category.icon}</div>
+                  <div className="flex-shrink-0">{category.icon}</div>
                   <div className="flex-1">
                     <h3 className="text-lg font-bold text-[#1E293B] mb-1">{category.name}</h3>
                     <p className="text-xs text-[#94A3B8] mb-2">{category.nameCn}</p>
