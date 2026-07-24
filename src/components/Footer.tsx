@@ -21,9 +21,9 @@ const quickLinks = [
 ];
 
 const productLinks = [
-  { labelKey: 'Surgical Instruments', labelKeyCn: '手术器械', href: '/products?surgical' },
-  { labelKey: 'Diagnostic Equipment', labelKeyCn: '诊断设备', href: '/products?diagnostic' },
-  { labelKey: 'Patient Monitoring', labelKeyCn: '监护设备', href: '/products?monitoring' },
+  { labelKey: 'Surgical Instruments', labelKeyCn: '手术器械', href: '/products/surgical-instruments' },
+  { labelKey: 'Diagnostic Equipment', labelKeyCn: '诊断设备', href: '/products/diagnostic-equipment' },
+  { labelKey: 'Patient Monitoring', labelKeyCn: '监护设备', href: '/products/patient-monitoring' },
   { labelKey: 'All Products', labelKeyCn: '所有产品', href: '/products' },
 ];
 
