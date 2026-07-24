@@ -76,7 +76,7 @@ export function Footer() {
               </div>
               <div className="flex flex-col">
                 <span className="font-heading font-bold text-lg leading-tight">DANDELION</span>
-                <span className="font-heading text-xs tracking-wider text-white/60">MEDICAL</span>
+                <span className="font-heading text-xs tracking-wider text-white/60">CHINA MEDICAL</span>
               </div>
             </div>
             <p className="text-sm leading-relaxed text-white/60 mb-6">

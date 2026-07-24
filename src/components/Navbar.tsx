@@ -50,7 +50,7 @@ export function Navbar() {
               <span className={`font-heading text-xs tracking-wider ${
                 isScrolled ? 'text-dandelion-gray' : 'text-white/80'
               }`}>
-                MEDICAL
+                CHINA MEDICAL
               </span>
             </div>
           </Link>
