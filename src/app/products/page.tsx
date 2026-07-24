@@ -4,7 +4,7 @@ import { useState, ReactNode } from 'react';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { WhatsAppButton } from '@/components/WhatsAppButton';
-import { SearchIcon, ArrowRightIcon, ConsumablesIcon, ScalpelIcon, OrthopedicIcon, DiagnosticIcon, MonitoringIcon, IVDIcon, DentalIcon, OphthalmicIcon, RehabilitationIcon, RespiratoryIcon, LaboratoryIcon, InterventionalIcon, BloodIcon, EndoscopyIcon, ImagingIcon, ReproductionIcon, MedicalITIcon, SterilizationIcon } from '@/components/icons';
+import { SearchIcon, ArrowRightIcon, ConsumablesIcon, ScalpelIcon, OrthopedicIcon, DiagnosticIcon, MonitoringIcon, IVDIcon, DentalIcon, OphthalmicIcon, RehabilitationIcon, RespiratoryIcon, LaboratoryIcon, InterventionalIcon, BloodIcon, EndoscopyIcon, ImagingIcon, ReproductionIcon, MedicalITIcon, SterilizationIcon, SurgicalRobotIcon } from '@/components/icons';
 
 interface ProductCategory {
   id: string;
@@ -608,6 +608,33 @@ const productCategories: ProductCategory[] = [
     ],
   },
   {
+    id: 'robotics',
+    name: 'Surgical Robotics',
+    nameCn: '手术机器人',
+    description: 'Robotic surgery systems',
+    icon: <SurgicalRobotIcon className="w-10 h-10 text-[#2563EB]" />,
+    subcategories: [
+      'Robotic Surgery Systems',
+      'Surgical Robot Arms',
+      'Master-Slave Controllers',
+      '3D Visualization Systems',
+      'Surgical Instrument Manipulators',
+      'Haptic Feedback Devices',
+      'Robotic End effectors',
+      'Surgical Planning Software',
+      'Navigation & Tracking Systems',
+      'Robotic-Assisted Laparoscopy',
+      'Robotic-Assisted Orthopedics',
+      'Robotic-Assisted Neurosurgery',
+      'Robotic-Assisted Cardiac Surgery',
+      'Robotic-Assisted Radiation Therapy',
+      'Training Simulators',
+      'Robot Calibration Tools',
+      'Sterile Drape Systems',
+      'Robotic Accessories',
+    ],
+  },
+  {
     id: 'packaging',
     name: 'Packaging & Sterilization',
     nameCn: '包装灭菌',
@@ -659,7 +686,7 @@ export default function ProductsPage() {
               What We Source
             </h1>
             <p className="text-lg text-white/80 max-w-2xl mx-auto">
-              18 Categories, 5000+ Products — We help you find the right medical devices from China.
+              19 Categories, 5000+ Products — We help you find the right medical devices from China.
             </p>
           </div>
         </div>

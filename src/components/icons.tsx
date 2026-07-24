@@ -552,3 +552,18 @@ export function SterilizationIcon({ className = iconProps.className }: IconProps
     </svg>
   );
 }
+
+export function SurgicalRobotIcon({ className = iconProps.className }: IconProps) {
+  return (
+    <svg className={className} width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round">
+      <rect x="5" y="2" width="14" height="6" rx="2" />
+      <circle cx="9" cy="5" r="1" fill="currentColor" />
+      <circle cx="15" cy="5" r="1" fill="currentColor" />
+      <path d="M12 8v4" />
+      <path d="M8 12h8" />
+      <path d="M10 12v6" />
+      <path d="M14 12v6" />
+      <path d="M7 18h10" />
+    </svg>
+  );
+}

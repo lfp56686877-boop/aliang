@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState, ReactNode } from 'react';
-import { ArrowRightIcon, ScalpelIcon, ConsumablesIcon, OrthopedicIcon, DiagnosticIcon, MonitoringIcon, IVDIcon, DentalIcon, OphthalmicIcon, RehabilitationIcon, RespiratoryIcon, LaboratoryIcon, InterventionalIcon, BloodIcon, EndoscopyIcon, ImagingIcon, ReproductionIcon, MedicalITIcon, SterilizationIcon } from './icons';
+import { ArrowRightIcon, ScalpelIcon, ConsumablesIcon, OrthopedicIcon, DiagnosticIcon, MonitoringIcon, IVDIcon, DentalIcon, OphthalmicIcon, RehabilitationIcon, RespiratoryIcon, LaboratoryIcon, InterventionalIcon, BloodIcon, EndoscopyIcon, ImagingIcon, ReproductionIcon, MedicalITIcon, SterilizationIcon, SurgicalRobotIcon } from './icons';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 interface ProductCategory {
@@ -158,6 +158,14 @@ const productCategories: ProductCategory[] = [
     descriptionCn: '灭菌设备',
     icon: <SterilizationIcon className="w-10 h-10 text-[#2563EB]" />,
   },
+  {
+    id: 'robotics',
+    name: 'Surgical Robotics',
+    nameCn: '手术机器人',
+    description: 'Robotic surgery systems',
+    descriptionCn: '机器人手术系统',
+    icon: <SurgicalRobotIcon className="w-10 h-10 text-[#2563EB]" />,
+  },
 ];
 
 function CategoryCard({ category, isVisible, index }: { category: ProductCategory; isVisible: boolean; index: number }) {
@@ -218,7 +226,7 @@ export function ProductsSection() {
             {t('What We Source', '采购品类')}
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1E293B] mb-4">
-            {t('18 Categories, 5000+ Products', '18大品类，5000+产品')}
+            {t('19 Categories, 5000+ Products', '19大品类，5000+产品')}
           </h2>
           <p className="text-lg text-[#64748B] max-w-2xl mx-auto">
             {t('We help you find the right medical devices from China\'s vast manufacturing landscape.', '我们帮助您从中国庞大的制造领域中找到合适的医疗器械。')}
