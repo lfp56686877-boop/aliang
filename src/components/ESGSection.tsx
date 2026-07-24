@@ -58,7 +58,7 @@ export function ESGSection() {
 
         {/* Description */}
         <p className="text-white/90 leading-relaxed max-w-3xl mx-auto mb-12">
-          As a responsible medical device export company, Dandelion China Medical
+          As a responsible medical device export company, China Medical Devices
           adheres to sustainable development principles. We strictly select
           environmentally compliant suppliers, promote green medical products,
           and are dedicated to contributing to global healthcare.

@@ -75,8 +75,8 @@ export function Footer() {
                 <span className="text-white font-bold text-xl">D</span>
               </div>
               <div className="flex flex-col">
-                <span className="font-heading font-bold text-lg leading-tight">DANDELION</span>
-                <span className="font-heading text-xs tracking-wider text-white/60">CHINA MEDICAL</span>
+                <span className="font-heading font-bold text-lg leading-tight">CHINA</span>
+                <span className="font-heading text-xs tracking-wider text-white/60">MEDICAL DEVICES</span>
               </div>
             </div>
             <p className="text-sm leading-relaxed text-white/60 mb-6">
@@ -154,7 +154,7 @@ export function Footer() {
         {/* Lower Section */}
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-white/40">
-            © {new Date().getFullYear()} Dandelion China Medical. {t('All Rights Reserved.', '版权所有。')}
+            © {new Date().getFullYear()} China Medical Devices. {t('All Rights Reserved.', '版权所有。')}
           </p>
           <div className="flex gap-6">
             {legalLinks.map((link) => (

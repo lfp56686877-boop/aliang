@@ -45,12 +45,12 @@ export function Navbar() {
               <span className={`font-heading font-bold text-lg leading-tight ${
                 isScrolled ? 'text-dandelion-dark-gray' : 'text-white'
               }`}>
-                DANDELION
+                CHINA
               </span>
               <span className={`font-heading text-xs tracking-wider ${
                 isScrolled ? 'text-dandelion-gray' : 'text-white/80'
               }`}>
-                CHINA MEDICAL
+                MEDICAL DEVICES
               </span>
             </div>
           </Link>
