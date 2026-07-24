@@ -154,7 +154,7 @@ export function Footer() {
         {/* Lower Section */}
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-white/40">
-            © {new Date().getFullYear()} Dandelion Medical. {t('All Rights Reserved.', '版权所有。')}
+            © {new Date().getFullYear()} Dandelion China Medical. {t('All Rights Reserved.', '版权所有。')}
           </p>
           <div className="flex gap-6">
             {legalLinks.map((link) => (

@@ -13,7 +13,7 @@ interface Milestone {
 }
 
 const milestones: Milestone[] = [
-  { year: '2019', title: 'Company Founded', description: 'Dandelion Medical established in China, starting with a vision to bridge global healthcare with Chinese manufacturing.' },
+  { year: '2019', title: 'Company Founded', description: 'Dandelion China Medical established in China, starting with a vision to bridge global healthcare with Chinese manufacturing.' },
   { year: '2020', title: 'First International Client', description: 'Secured first major partnership with Middle Eastern healthcare distributor.' },
   { year: '2021', title: 'Network Expansion', description: 'Expanded factory network to 50+ verified partners across China.' },
   { year: '2022', title: 'Global Reach', description: 'Products reaching 30+ countries across Middle East, Africa, and Asia.' },
@@ -110,7 +110,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
-              About Dandelion Medical
+              About Dandelion China Medical
             </h1>
             <p className="text-lg text-white/80 max-w-2xl mx-auto">
               Your Bridge to China&apos;s Medical Device Market
@@ -129,13 +129,13 @@ export default function AboutPage() {
                 20 Years of Medical Device Expertise
               </h2>
               <p className="text-[#64748B] leading-relaxed mb-6">
-                Founded in 2019, Dandelion Medical leverages over 20 years of deep expertise in the medical device industry. We understand China&apos;s complex manufacturing landscape and help global healthcare providers navigate it with confidence.
+                Founded in 2019, Dandelion China Medical leverages over 20 years of deep expertise in the medical device industry. We understand China&apos;s complex manufacturing landscape and help global healthcare providers navigate it with confidence.
               </p>
               <p className="text-[#64748B] leading-relaxed mb-6">
                 Our mission is simple: connect global healthcare with China&apos;s manufacturing excellence through transparent, reliable, and efficient sourcing.
               </p>
               <a
-                href="https://wa.me/8618669317333?text=Hello, I'd like to learn more about Dandelion Medical."
+                href="https://wa.me/8618669317333?text=Hello, I'd like to learn more about Dandelion China Medical."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-[#25D366] text-white px-6 py-3 rounded-full hover:bg-[#128C7E] transition-all duration-300 font-semibold"
@@ -229,7 +229,7 @@ export default function AboutPage() {
             Let us help you source the right medical devices from China.
           </p>
           <a
-            href="https://wa.me/8618669317333?text=Hello, I'd like to discuss a partnership with Dandelion Medical."
+            href="https://wa.me/8618669317333?text=Hello, I'd like to discuss a partnership with Dandelion China Medical."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-white text-[#2563EB] px-8 py-4 rounded-full hover:bg-[#EFF6FF] transition-all duration-300 font-semibold"

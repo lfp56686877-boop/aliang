@@ -13,9 +13,9 @@ interface NewsItem {
 const newsItems: NewsItem[] = [
   {
     id: 1,
-    title: "Dandelion Medical Signs Strategic Partnership with Southeast Asia's Largest Healthcare Group",
+    title: "Dandelion China Medical Signs Strategic Partnership with Southeast Asia's Largest Healthcare Group",
     excerpt:
-      "Recently, Dandelion Medical officially signed a strategic partnership agreement with a leading healthcare group in Southeast Asia. The two parties will deepen cooperation in medical device trade, technology exchange, and more...",
+      "Recently, Dandelion China Medical officially signed a strategic partnership agreement with a leading healthcare group in Southeast Asia. The two parties will deepen cooperation in medical device trade, technology exchange, and more...",
     date: "Jan 15, 2024",
     image: "/images/news-1.jpg",
   },
@@ -23,15 +23,15 @@ const newsItems: NewsItem[] = [
     id: 2,
     title: "Multiple Products Receive CE Certification, Expanding European Market Presence",
     excerpt:
-      "Several medical device products under Dandelion Medical have successfully passed CE certification review, marking official access to the European market...",
+      "Several medical device products under Dandelion China Medical have successfully passed CE certification review, marking official access to the European market...",
     date: "Jan 10, 2024",
     image: "/images/news-2.jpg",
   },
   {
     id: 3,
-    title: "Dandelion Medical Showcases at 2024 Arab Health Exhibition",
+    title: "Dandelion China Medical Showcases at 2024 Arab Health Exhibition",
     excerpt:
-      "Dandelion Medical featured its star products at the 2024 Arab Health Exhibition, connecting with healthcare professionals worldwide to explore collaboration opportunities...",
+      "Dandelion China Medical featured its star products at the 2024 Arab Health Exhibition, connecting with healthcare professionals worldwide to explore collaboration opportunities...",
     date: "Jan 5, 2024",
     image: "/images/news-3.jpg",
   },

@@ -3,16 +3,16 @@ import "./globals.css";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 
 export const metadata: Metadata = {
-  title: "Dandelion Medical | Professional Medical Device Exporter",
+  title: "Dandelion China Medical | Professional Medical Device Exporter",
   description:
-    "Dandelion Medical is a professional Chinese medical device export company, dedicated to providing high-quality medical device products and services to global healthcare institutions.",
+    "Dandelion China Medical is a professional Chinese medical device export company, dedicated to providing high-quality medical device products and services to global healthcare institutions.",
   keywords:
-    "medical devices, export, surgical instruments, diagnostic equipment, rehabilitation devices, Dandelion Medical",
+    "medical devices, export, surgical instruments, diagnostic equipment, rehabilitation devices, Dandelion China Medical",
   openGraph: {
-    title: "Dandelion Medical | Professional Medical Device Exporter",
+    title: "Dandelion China Medical | Professional Medical Device Exporter",
     description: "Connecting China's Medical Excellence to the World",
     url: "https://www.0539cn.us",
-    siteName: "Dandelion Medical",
+    siteName: "Dandelion China Medical",
     locale: "en_US",
     type: "website",
   },
