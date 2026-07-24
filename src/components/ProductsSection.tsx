@@ -15,6 +15,14 @@ interface ProductCategory {
 
 const productCategories: ProductCategory[] = [
   {
+    id: 'robotics',
+    name: 'Surgical Robotics',
+    nameCn: '手术机器人',
+    description: 'Robotic surgery systems',
+    descriptionCn: '机器人手术系统',
+    icon: <SurgicalRobotIcon className="w-10 h-10 text-[#2563EB]" />,
+  },
+  {
     id: 'general',
     name: 'General Medical Supplies',
     nameCn: '医疗耗材',
@@ -157,14 +165,6 @@ const productCategories: ProductCategory[] = [
     description: 'Sterilization equipment',
     descriptionCn: '灭菌设备',
     icon: <SterilizationIcon className="w-10 h-10 text-[#2563EB]" />,
-  },
-  {
-    id: 'robotics',
-    name: 'Surgical Robotics',
-    nameCn: '手术机器人',
-    description: 'Robotic surgery systems',
-    descriptionCn: '机器人手术系统',
-    icon: <SurgicalRobotIcon className="w-10 h-10 text-[#2563EB]" />,
   },
 ];
 
