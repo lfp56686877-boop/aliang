@@ -218,7 +218,7 @@ export function ProductsSection() {
             {t('What We Source', '采购品类')}
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1E293B] mb-4">
-            {t('18 Categories, 1000+ Products', '18大品类，1000+产品')}
+            {t('18 Categories, 5000+ Products', '18大品类，5000+产品')}
           </h2>
           <p className="text-lg text-[#64748B] max-w-2xl mx-auto">
             {t('We help you find the right medical devices from China\'s vast manufacturing landscape.', '我们帮助您从中国庞大的制造领域中找到合适的医疗器械。')}

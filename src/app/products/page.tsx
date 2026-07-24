@@ -659,7 +659,7 @@ export default function ProductsPage() {
               What We Source
             </h1>
             <p className="text-lg text-white/80 max-w-2xl mx-auto">
-              18 Categories, 1000+ Products — We help you find the right medical devices from China.
+              18 Categories, 5000+ Products — We help you find the right medical devices from China.
             </p>
           </div>
         </div>
